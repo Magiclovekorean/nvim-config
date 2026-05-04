@@ -8,7 +8,7 @@ return {
   },
   opts = {
     kernel = {
-      python_path = "/home/magictt/Jupyter-notebooks/.venv/bin/python",
+      python_path = "/home/magictt/Desktop/magictt/ml/student_performance_linear_regression/venv/bin/python",
     },
     shadow = {
       location = "workspace",
