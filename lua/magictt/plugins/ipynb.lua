@@ -7,9 +7,7 @@ return {
     "folke/snacks.nvim",
   },
   opts = {
-    kernel = {
-      python_path = "/home/magictt/Desktop/magictt/ml/student_performance_linear_regression/venv/bin/python",
-    },
+    kernel = {},
     shadow = {
       location = "workspace",
       dir = ".ipynb.nvim",
