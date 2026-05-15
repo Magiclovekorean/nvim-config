@@ -17,6 +17,7 @@ return {
       })
 
       vim.lsp.enable("pyright")
+      vim.lsp.enable("tailwindcss")
 
       vim.api.nvim_create_autocmd("BufWritePre", {
         pattern = { "*.js", "*.ts" },
