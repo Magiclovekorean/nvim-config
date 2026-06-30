@@ -7,7 +7,9 @@ return {
     "folke/snacks.nvim",
   },
   opts = {
-    kernel = {},
+    kernel = {
+        python_path = "venv/bin/python",
+    },
     shadow = {
       location = "workspace",
       dir = ".ipynb.nvim",
