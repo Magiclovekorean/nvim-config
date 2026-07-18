@@ -10,7 +10,11 @@ return{
             local basename = vim.fs.basename(cwd)
 			_99.setup({
                 -- provider = _99.Providers.ClaudeCodeProvider,  -- default: OpenCodeProvider
-				logger = {
+                -- Override the broken default model (opencode/claude-sonnet-4-5
+                -- is not available on this opencode server). Use a model that
+                -- exists in `opencode models` instead.
+                model = "opencode/big-pickle",
+			logger = {
 					level = _99.DEBUG,
 					path = "/tmp/" .. basename .. ".99.debug",
 					print_on_error = true,
