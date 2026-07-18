@@ -1,4 +1,4 @@
-# I no longer use this config, I migrated it to my main dotfiles repo
+# I no longer use this config, I migrated it to my [main dotfiles repo](https://github.com/Magiclovekorean/dotfiles) repo
 
 ## Requirements
 
