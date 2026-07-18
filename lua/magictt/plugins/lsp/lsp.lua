@@ -19,6 +19,13 @@ return {
       vim.lsp.enable("pyright")
       vim.lsp.enable("tailwindcss")
 
+      vim.api.nvim_create_autocmd({ "BufEnter", "BufNewFile" }, {
+        pattern = "*/waybar/*",
+        callback = function(args)
+          vim.diagnostic.enable(false, { bufnr = args.buf })
+        end,
+      })
+
       vim.api.nvim_create_autocmd("BufWritePre", {
         pattern = { "*.js", "*.ts" },
         callback = function()
