@@ -1,4 +1,4 @@
-# Current nvim setup
+# I no longer use this config, I migrated it to my main dotfiles repo
 
 ## Requirements
 
